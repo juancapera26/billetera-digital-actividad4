@@ -1,0 +1,58 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidebar -->
+  <mat-sidenav mode="side" opened class="sidenav">
+    <div class="logo">WalletApp</div>
+    <mat-nav-list>
+      <a mat-list-item href="#">
+        <span style="color: white">Dashboard</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbar">
+      <span>Dashboard</span>
+      <span class="spacer"></span>
+      <button mat-icon-button>
+        <mat-icon>notifications</mat-icon>
+      </button>
+      <button mat-icon-button (click)="logout()">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <div class="content">
+      <mat-tab-group>
+        <mat-tab label="Ingresos">
+          <mat-card class="card ingreso">
+            <mat-card-title>Ingresos</mat-card-title>
+            <mat-card-content>
+              <h2>{{ ingreso | currency }}</h2>
+              <p>Este mes</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+
+        <mat-tab label="Gastos">
+          <mat-card class="card gasto">
+            <mat-card-title>Gastos</mat-card-title>
+            <mat-card-content>
+              <h2>{{ gastos | currency }}</h2>
+              <p>Este mes</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+
+        <mat-tab label="Balance">
+          <mat-card class="card balance">
+            <mat-card-title>Balance</mat-card-title>
+            <mat-card-content>
+              <h2>{{ balance | currency }}</h2>
+              <p>Saldo disponible</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,129 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 220px;
+  background: #111827;
+  color: #f3f4f6;
+  padding-top: 1rem;
+  border-right: none;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.mat-nav-list a {
+  color: #d1d5db !important;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 0.3rem 0.5rem;
+  padding: 0.6rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover */
+.mat-nav-list a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+}
+.toolbar {
+  background: #ffffff;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  min-height: calc(100vh - 64px);
+}
+
+.mat-mdc-tab-group {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.mat-mdc-tab-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mat-mdc-tab-body-content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #111827;
+}
+
+.card p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.ingreso {
+  border-top: 5px solid #10b981;
+}
+
+.gasto {
+  border-top: 5px solid #ef4444;
+}
+
+.balance {
+  border-top: 5px solid #3b82f6;
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .mat-mdc-tab-body-content {
+    padding: 1rem 0.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+   

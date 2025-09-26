@@ -1,0 +1,94 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #424242; /* Fondo limpio */
+  font-family: 'Inter', sans-serif;
+}
+
+.login-card {
+  width: 380px;
+  padding: 2.5rem;
+  border-radius: 20px;    
+  background: #ffffff;
+  box-shadow: 0 6px 30px rgba(219, 219, 219, 0.555);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+mat-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+mat-card-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-form-field {
+  margin-bottom: 1.2rem;
+}
+
+input[matInput] {
+  font-size: 0.95rem;
+}
+
+button[mat-raised-button] {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  border-radius: 12px;
+  padding: 0.9em;
+  background: linear-gradient(135deg, #9c9c9c, #1d1d1d);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.5);
+}
+
+.error-message {
+  color: #e63946;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 1em;
+  background: rgba(230, 57, 70, 0.08);
+  padding: 0.6em;
+  border-radius: 8px;
+}
+
+.footer-text {
+  margin-top: 1.8rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
